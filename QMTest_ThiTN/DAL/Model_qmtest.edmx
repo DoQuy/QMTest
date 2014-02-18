@@ -1,0 +1,1774 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="qm_testModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="qm_testModelStoreContainer">
+          <EntitySet Name="sinhvientraloi" EntityType="qm_testModel.Store.sinhvientraloi" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_cauhoi" EntityType="qm_testModel.Store.tbl_cauhoi" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_cauhoichinhthuc" EntityType="qm_testModel.Store.tbl_cauhoichinhthuc" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_cautraloi" EntityType="qm_testModel.Store.tbl_cautraloi" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_cautraloichinhthuc" EntityType="qm_testModel.Store.tbl_cautraloichinhthuc" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chitietchucdanh" EntityType="qm_testModel.Store.tbl_chitietchucdanh" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chitietchucnang" EntityType="qm_testModel.Store.tbl_chitietchucnang" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chitietchucvu" EntityType="qm_testModel.Store.tbl_chitietchucvu" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chitietgiangday" EntityType="qm_testModel.Store.tbl_chitietgiangday" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chitietquyen" EntityType="qm_testModel.Store.tbl_chitietquyen" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chucdanh" EntityType="qm_testModel.Store.tbl_chucdanh" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chucnang" EntityType="qm_testModel.Store.tbl_chucnang" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chucvu" EntityType="qm_testModel.Store.tbl_chucvu" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chude" EntityType="qm_testModel.Store.tbl_chude" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_chuong" EntityType="qm_testModel.Store.tbl_chuong" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_giaovien" EntityType="qm_testModel.Store.tbl_giaovien" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_giathiet" EntityType="qm_testModel.Store.tbl_giathiet" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_khoa" EntityType="qm_testModel.Store.tbl_khoa" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_loaicauhoi" EntityType="qm_testModel.Store.tbl_loaicauhoi" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_matrankienthuc" EntityType="qm_testModel.Store.tbl_matrankienthuc" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_monhoc" EntityType="qm_testModel.Store.tbl_monhoc" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_muckienthuc" EntityType="qm_testModel.Store.tbl_muckienthuc" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_muctrinang" EntityType="qm_testModel.Store.tbl_muctrinang" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_quyen" EntityType="qm_testModel.Store.tbl_quyen" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_taikhoansinhvien" EntityType="qm_testModel.Store.tbl_taikhoansinhvien" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_thaoluan" EntityType="qm_testModel.Store.tbl_thaoluan" store:Type="Tables" Schema="qm_test" />
+          <EntitySet Name="tbl_tobomon" EntityType="qm_testModel.Store.tbl_tobomon" store:Type="Tables" Schema="qm_test" />
+          <AssociationSet Name="sinhvientraloi idfk1" Association="qm_testModel.Store.sinhvientraloi idfk1">
+            <End Role="tbl_taikhoansinhvien" EntitySet="tbl_taikhoansinhvien" />
+            <End Role="sinhvientraloi" EntitySet="sinhvientraloi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_1" Association="qm_testModel.Store.tbl_cauhoi_ibfk_1">
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_2" Association="qm_testModel.Store.tbl_cauhoi_ibfk_2">
+            <End Role="tbl_giathiet" EntitySet="tbl_giathiet" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_3" Association="qm_testModel.Store.tbl_cauhoi_ibfk_3">
+            <End Role="tbl_loaicauhoi" EntitySet="tbl_loaicauhoi" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cautraloi_ibfk_1" Association="qm_testModel.Store.tbl_cautraloi_ibfk_1">
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+            <End Role="tbl_cautraloi" EntitySet="tbl_cautraloi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucdanh_ibfk_2" Association="qm_testModel.Store.tbl_chitietchucdanh_ibfk_2">
+            <End Role="tbl_chucdanh" EntitySet="tbl_chucdanh" />
+            <End Role="tbl_chitietchucdanh" EntitySet="tbl_chitietchucdanh" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucnang_ibfk_2" Association="qm_testModel.Store.tbl_chitietchucnang_ibfk_2">
+            <End Role="tbl_chucnang" EntitySet="tbl_chucnang" />
+            <End Role="tbl_chitietchucnang" EntitySet="tbl_chitietchucnang" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucvu_ibfk_2" Association="qm_testModel.Store.tbl_chitietchucvu_ibfk_2">
+            <End Role="tbl_chucvu" EntitySet="tbl_chucvu" />
+            <End Role="tbl_chitietchucvu" EntitySet="tbl_chitietchucvu" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietgiangday_ibfk_1" Association="qm_testModel.Store.tbl_chitietgiangday_ibfk_1">
+            <End Role="tbl_monhoc" EntitySet="tbl_monhoc" />
+            <End Role="tbl_chitietgiangday" EntitySet="tbl_chitietgiangday" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietquyen_ibfk_1" Association="qm_testModel.Store.tbl_chitietquyen_ibfk_1">
+            <End Role="tbl_quyen" EntitySet="tbl_quyen" />
+            <End Role="tbl_chitietquyen" EntitySet="tbl_chitietquyen" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietquyen_ibfk_2" Association="qm_testModel.Store.tbl_chitietquyen_ibfk_2">
+            <End Role="tbl_chucnang" EntitySet="tbl_chucnang" />
+            <End Role="tbl_chitietquyen" EntitySet="tbl_chitietquyen" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chude_ibfk_1" Association="qm_testModel.Store.tbl_chude_ibfk_1">
+            <End Role="tbl_chuong" EntitySet="tbl_chuong" />
+            <End Role="tbl_chude" EntitySet="tbl_chude" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chuong_ibfk_1" Association="qm_testModel.Store.tbl_chuong_ibfk_1">
+            <End Role="tbl_monhoc" EntitySet="tbl_monhoc" />
+            <End Role="tbl_chuong" EntitySet="tbl_chuong" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_giaovien_ibfk_1" Association="qm_testModel.Store.tbl_giaovien_ibfk_1">
+            <End Role="tbl_tobomon" EntitySet="tbl_tobomon" />
+            <End Role="tbl_giaovien" EntitySet="tbl_giaovien" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_matrankienthuc_ibfk_1" Association="qm_testModel.Store.tbl_matrankienthuc_ibfk_1">
+            <End Role="tbl_muckienthuc" EntitySet="tbl_muckienthuc" />
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_matrankienthuc_ibfk_2" Association="qm_testModel.Store.tbl_matrankienthuc_ibfk_2">
+            <End Role="tbl_muctrinang" EntitySet="tbl_muctrinang" />
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_muckienthuc_ibfk_1" Association="qm_testModel.Store.tbl_muckienthuc_ibfk_1">
+            <End Role="tbl_chude" EntitySet="tbl_chude" />
+            <End Role="tbl_muckienthuc" EntitySet="tbl_muckienthuc" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_thaoluan_ibfk_1" Association="qm_testModel.Store.tbl_thaoluan_ibfk_1">
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+            <End Role="tbl_thaoluan" EntitySet="tbl_thaoluan" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_tobomon_ibfk_1" Association="qm_testModel.Store.tbl_tobomon_ibfk_1">
+            <End Role="tbl_khoa" EntitySet="tbl_khoa" />
+            <End Role="tbl_tobomon" EntitySet="tbl_tobomon" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sinhvientraloi">
+          <Key>
+            <PropertyRef Name="IdTraLoi" />
+          </Key>
+          <Property Name="IdTraLoi" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IdCauHoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdSinhVien" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="ThoiGian" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="LuaChon" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="DapAn" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_cauhoi">
+          <Key>
+            <PropertyRef Name="IdCauHoi" />
+          </Key>
+          <Property Name="IdCauHoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+          <Property Name="IdGiaThiet" Type="varchar" MaxLength="255" />
+          <Property Name="IdLoaiCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="IdMaTranKienThuc" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_cauhoichinhthuc">
+          <Key>
+            <PropertyRef Name="IdCauHoi" />
+          </Key>
+          <Property Name="IdCauHoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+          <Property Name="IdLoaiCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="IdGiaThiet" Type="varchar" MaxLength="255" />
+          <Property Name="IdMaTranKienThuc" Type="varchar" MaxLength="255" />
+          <Property Name="HinhAnh" Type="mediumblob" />
+        </EntityType>
+        <EntityType Name="tbl_cautraloi">
+          <Key>
+            <PropertyRef Name="IdCauTraLoi" />
+          </Key>
+          <Property Name="IdCauTraLoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+          <Property Name="DapAn" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_cautraloichinhthuc">
+          <Key>
+            <PropertyRef Name="IdCauTraLoi" />
+          </Key>
+          <Property Name="IdCauTraLoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+          <Property Name="DapAn" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucdanh">
+          <Key>
+            <PropertyRef Name="IdChucDanh" />
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="ThoiDiem" />
+          </Key>
+          <Property Name="IdChucDanh" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdGiaoVien" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ThoiDiem" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucnang">
+          <Key>
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="IdChucNang" />
+          </Key>
+          <Property Name="IdGiaoVien" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdChucNang" Type="varchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucvu">
+          <Key>
+            <PropertyRef Name="IdChucVu" />
+            <PropertyRef Name="IdGiaoVien" />
+          </Key>
+          <Property Name="IdChucVu" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdGiaoVien" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ThoiDiem" Type="date" />
+        </EntityType>
+        <EntityType Name="tbl_chitietgiangday">
+          <Key>
+            <PropertyRef Name="IdMonHoc" />
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="NgayBatDau" />
+          </Key>
+          <Property Name="IdMonHoc" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdGiaoVien" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="NgayBatDau" Type="date" Nullable="false" />
+          <Property Name="NgayKetThuc" Type="date" />
+        </EntityType>
+        <EntityType Name="tbl_chitietquyen">
+          <Key>
+            <PropertyRef Name="IdChucNang" />
+            <PropertyRef Name="IdQuyen" />
+          </Key>
+          <Property Name="IdChucNang" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdQuyen" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TrangThai" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_chucdanh">
+          <Key>
+            <PropertyRef Name="IdChucDanh" />
+          </Key>
+          <Property Name="IdChucDanh" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenChucDanh" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chucnang">
+          <Key>
+            <PropertyRef Name="IdChucNang" />
+          </Key>
+          <Property Name="IdChucNang" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenChucNang" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chucvu">
+          <Key>
+            <PropertyRef Name="IdChucVu" />
+          </Key>
+          <Property Name="IdChucVu" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenChucVu" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chude">
+          <Key>
+            <PropertyRef Name="IdChuDe" />
+          </Key>
+          <Property Name="IdChuDe" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenChuDe" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+          <Property Name="IdChuong" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_chuong">
+          <Key>
+            <PropertyRef Name="IdChuong" />
+          </Key>
+          <Property Name="IdChuong" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdMonHoc" Type="varchar" MaxLength="255" />
+          <Property Name="TenChuong" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6035: The relationship 'tbl_chitietchucdanh_ibfk_1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'tbl_chitietchucnang_ibfk_1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'tbl_chitietchucvu_ibfk_1' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'tbl_chitietgiangday_ibfk_2' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      warning 6035: The relationship 'tbl_thaoluan_ibfk_2' has columns that are not part of the key of the table on the primary side of the relationship. The relationship was excluded.
+      -->
+        <EntityType Name="tbl_giaovien">
+          <Key>
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="TaiKhoan" />
+          </Key>
+          <Property Name="IdGiaoVien" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenGiaoVien" Type="varchar" MaxLength="255" />
+          <Property Name="TaiKhoan" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="MatKhau" Type="varchar" MaxLength="255" />
+          <Property Name="IdToBoMon" Type="varchar" MaxLength="255" />
+          <Property Name="NgaySinh" Type="date" />
+          <Property Name="DiaChi" Type="varchar" MaxLength="255" />
+          <Property Name="SoDienThoai" Type="varchar" MaxLength="255" />
+          <Property Name="TrangThai" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_giathiet">
+          <Key>
+            <PropertyRef Name="IdGiaThiet" />
+          </Key>
+          <Property Name="IdGiaThiet" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_khoa">
+          <Key>
+            <PropertyRef Name="IdKhoa" />
+          </Key>
+          <Property Name="IdKhoa" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenKhoa" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_loaicauhoi">
+          <Key>
+            <PropertyRef Name="IdLoaiCauHoi" />
+          </Key>
+          <Property Name="IdLoaiCauHoi" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenLoaiCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_matrankienthuc">
+          <Key>
+            <PropertyRef Name="IdMaTranKienThuc" />
+          </Key>
+          <Property Name="IdMaTranKienThuc" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="IdMucKienThuc" Type="varchar" MaxLength="255" />
+          <Property Name="IdMucTriNang" Type="varchar" MaxLength="255" />
+          <Property Name="SoCauNhap" Type="int" />
+          <Property Name="SoCauQuyDinh" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_monhoc">
+          <Key>
+            <PropertyRef Name="IdMonHoc" />
+          </Key>
+          <Property Name="IdMonHoc" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenMonHoc" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+          <Property Name="TrangThai" Type="bool" />
+        </EntityType>
+        <EntityType Name="tbl_muckienthuc">
+          <Key>
+            <PropertyRef Name="IdMucKienThuc" />
+          </Key>
+          <Property Name="IdMucKienThuc" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenMucKienThuc" Type="varchar" MaxLength="255" />
+          <Property Name="IdChuDe" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_muctrinang">
+          <Key>
+            <PropertyRef Name="IdMucTriNang" />
+          </Key>
+          <Property Name="IdMucTriNang" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenMucTriNang" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_quyen">
+          <Key>
+            <PropertyRef Name="IdQuyen" />
+          </Key>
+          <Property Name="IdQuyen" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenQuyen" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_taikhoansinhvien">
+          <Key>
+            <PropertyRef Name="IdSinhVien" />
+          </Key>
+          <Property Name="IdSinhVien" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="HoTen" Type="varchar" MaxLength="50" />
+          <Property Name="MatKhau" Type="varchar" MaxLength="50" />
+          <Property Name="MaQuyen" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_thaoluan">
+          <Key>
+            <PropertyRef Name="IdThaoLuan" />
+            <PropertyRef Name="ThoiDiem" />
+          </Key>
+          <Property Name="IdThaoLuan" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="ThoiDiem" Type="datetime" Nullable="false" />
+          <Property Name="IdCauHoi" Type="varchar" MaxLength="255" />
+          <Property Name="IdGiaoVien" Type="varchar" MaxLength="255" />
+          <Property Name="NoiDung" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tbl_tobomon">
+          <Key>
+            <PropertyRef Name="IdToBoMon" />
+          </Key>
+          <Property Name="IdToBoMon" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="TenToBoMon" Type="varchar" MaxLength="255" />
+          <Property Name="MoTa" Type="varchar" MaxLength="255" />
+          <Property Name="IdKhoa" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="sinhvientraloi idfk1">
+          <End Role="tbl_taikhoansinhvien" Type="qm_testModel.Store.tbl_taikhoansinhvien" Multiplicity="1" />
+          <End Role="sinhvientraloi" Type="qm_testModel.Store.sinhvientraloi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_taikhoansinhvien">
+              <PropertyRef Name="IdSinhVien" />
+            </Principal>
+            <Dependent Role="sinhvientraloi">
+              <PropertyRef Name="IdSinhVien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_1">
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.Store.tbl_matrankienthuc" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.Store.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMaTranKienThuc" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdMaTranKienThuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_2">
+          <End Role="tbl_giathiet" Type="qm_testModel.Store.tbl_giathiet" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.Store.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_giathiet">
+              <PropertyRef Name="IdGiaThiet" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdGiaThiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_3">
+          <End Role="tbl_loaicauhoi" Type="qm_testModel.Store.tbl_loaicauhoi" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.Store.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_loaicauhoi">
+              <PropertyRef Name="IdLoaiCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdLoaiCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cautraloi_ibfk_1">
+          <End Role="tbl_cauhoi" Type="qm_testModel.Store.tbl_cauhoi" Multiplicity="0..1" />
+          <End Role="tbl_cautraloi" Type="qm_testModel.Store.tbl_cautraloi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_cauhoi">
+              <PropertyRef Name="IdCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_cautraloi">
+              <PropertyRef Name="IdCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucdanh_ibfk_2">
+          <End Role="tbl_chucdanh" Type="qm_testModel.Store.tbl_chucdanh" Multiplicity="1" />
+          <End Role="tbl_chitietchucdanh" Type="qm_testModel.Store.tbl_chitietchucdanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucdanh">
+              <PropertyRef Name="IdChucDanh" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucdanh">
+              <PropertyRef Name="IdChucDanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucnang_ibfk_2">
+          <End Role="tbl_chucnang" Type="qm_testModel.Store.tbl_chucnang" Multiplicity="1" />
+          <End Role="tbl_chitietchucnang" Type="qm_testModel.Store.tbl_chitietchucnang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucvu_ibfk_2">
+          <End Role="tbl_chucvu" Type="qm_testModel.Store.tbl_chucvu" Multiplicity="1" />
+          <End Role="tbl_chitietchucvu" Type="qm_testModel.Store.tbl_chitietchucvu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucvu">
+              <PropertyRef Name="IdChucVu" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucvu">
+              <PropertyRef Name="IdChucVu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietgiangday_ibfk_1">
+          <End Role="tbl_monhoc" Type="qm_testModel.Store.tbl_monhoc" Multiplicity="1" />
+          <End Role="tbl_chitietgiangday" Type="qm_testModel.Store.tbl_chitietgiangday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_monhoc">
+              <PropertyRef Name="IdMonHoc" />
+            </Principal>
+            <Dependent Role="tbl_chitietgiangday">
+              <PropertyRef Name="IdMonHoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietquyen_ibfk_1">
+          <End Role="tbl_quyen" Type="qm_testModel.Store.tbl_quyen" Multiplicity="1" />
+          <End Role="tbl_chitietquyen" Type="qm_testModel.Store.tbl_chitietquyen" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_quyen">
+              <PropertyRef Name="IdQuyen" />
+            </Principal>
+            <Dependent Role="tbl_chitietquyen">
+              <PropertyRef Name="IdQuyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietquyen_ibfk_2">
+          <End Role="tbl_chucnang" Type="qm_testModel.Store.tbl_chucnang" Multiplicity="1" />
+          <End Role="tbl_chitietquyen" Type="qm_testModel.Store.tbl_chitietquyen" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Principal>
+            <Dependent Role="tbl_chitietquyen">
+              <PropertyRef Name="IdChucNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chude_ibfk_1">
+          <End Role="tbl_chuong" Type="qm_testModel.Store.tbl_chuong" Multiplicity="0..1" />
+          <End Role="tbl_chude" Type="qm_testModel.Store.tbl_chude" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chuong">
+              <PropertyRef Name="IdChuong" />
+            </Principal>
+            <Dependent Role="tbl_chude">
+              <PropertyRef Name="IdChuong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chuong_ibfk_1">
+          <End Role="tbl_monhoc" Type="qm_testModel.Store.tbl_monhoc" Multiplicity="0..1" />
+          <End Role="tbl_chuong" Type="qm_testModel.Store.tbl_chuong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_monhoc">
+              <PropertyRef Name="IdMonHoc" />
+            </Principal>
+            <Dependent Role="tbl_chuong">
+              <PropertyRef Name="IdMonHoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_giaovien_ibfk_1">
+          <End Role="tbl_tobomon" Type="qm_testModel.Store.tbl_tobomon" Multiplicity="0..1" />
+          <End Role="tbl_giaovien" Type="qm_testModel.Store.tbl_giaovien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_tobomon">
+              <PropertyRef Name="IdToBoMon" />
+            </Principal>
+            <Dependent Role="tbl_giaovien">
+              <PropertyRef Name="IdToBoMon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_matrankienthuc_ibfk_1">
+          <End Role="tbl_muckienthuc" Type="qm_testModel.Store.tbl_muckienthuc" Multiplicity="0..1" />
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.Store.tbl_matrankienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_muckienthuc">
+              <PropertyRef Name="IdMucKienThuc" />
+            </Principal>
+            <Dependent Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMucKienThuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_matrankienthuc_ibfk_2">
+          <End Role="tbl_muctrinang" Type="qm_testModel.Store.tbl_muctrinang" Multiplicity="0..1" />
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.Store.tbl_matrankienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_muctrinang">
+              <PropertyRef Name="IdMucTriNang" />
+            </Principal>
+            <Dependent Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMucTriNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_muckienthuc_ibfk_1">
+          <End Role="tbl_chude" Type="qm_testModel.Store.tbl_chude" Multiplicity="0..1" />
+          <End Role="tbl_muckienthuc" Type="qm_testModel.Store.tbl_muckienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chude">
+              <PropertyRef Name="IdChuDe" />
+            </Principal>
+            <Dependent Role="tbl_muckienthuc">
+              <PropertyRef Name="IdChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_thaoluan_ibfk_1">
+          <End Role="tbl_cauhoi" Type="qm_testModel.Store.tbl_cauhoi" Multiplicity="0..1" />
+          <End Role="tbl_thaoluan" Type="qm_testModel.Store.tbl_thaoluan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_cauhoi">
+              <PropertyRef Name="IdCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_thaoluan">
+              <PropertyRef Name="IdCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_tobomon_ibfk_1">
+          <End Role="tbl_khoa" Type="qm_testModel.Store.tbl_khoa" Multiplicity="0..1" />
+          <End Role="tbl_tobomon" Type="qm_testModel.Store.tbl_tobomon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_khoa">
+              <PropertyRef Name="IdKhoa" />
+            </Principal>
+            <Dependent Role="tbl_tobomon">
+              <PropertyRef Name="IdKhoa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="CauHoiChinhThuc_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="CauHoi_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="CauHoi_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdGiaThiet" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdMaTranKienThuc" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="CauHoi_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="CauHoi_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdGiaThiet" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdMaTranKienThuc" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="CauTraLoiChinhThuc_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ChucDanh_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdChucDanh" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ChucDanh_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdChucDanh" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenChucDanh" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ChucDanh_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="ChucDanh_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdChucDanh" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenChucDanh" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaoVien_DangNhap" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_TaiKhoan" Type="varchar" Mode="In" />
+          <Parameter Name="p_MatKhau" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaoVien_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaoVien" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaoVien_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_TaiKhoan" Type="varchar" Mode="In" />
+          <Parameter Name="p_MatKhau" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdToBoMon" Type="varchar" Mode="In" />
+          <Parameter Name="p_NgaySinh" Type="date" Mode="In" />
+          <Parameter Name="p_DiaChi" Type="varchar" Mode="In" />
+          <Parameter Name="p_SoDienThoai" Type="varchar" Mode="In" />
+          <Parameter Name="p_TrangThai" Type="tinyint" Mode="In" />
+        </Function>
+        <Function Name="GiaoVien_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="GiaoVien_ThongTin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_TaiKhoan" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaoVien_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_TaiKhoan" Type="varchar" Mode="In" />
+          <Parameter Name="p_MatKhau" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdToBoMon" Type="varchar" Mode="In" />
+          <Parameter Name="p_NgaySinh" Type="date" Mode="In" />
+          <Parameter Name="p_DiaChi" Type="varchar" Mode="In" />
+          <Parameter Name="p_SoDienThoai" Type="varchar" Mode="In" />
+          <Parameter Name="p_TrangThai" Type="tinyint" Mode="In" />
+        </Function>
+        <Function Name="GiaThiet_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaThiet" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaThiet_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaThiet" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="GiaThiet_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="GiaThiet_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdGiaThiet" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Khoa_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdKhoa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Khoa_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdKhoa" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenKhoa" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Khoa_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="Khoa_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdKhoa" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenKhoa" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="LayKetQua" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_idsinhvien" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="LoaiCauHoi_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdLoaiCauHoi" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="LoaiCauHoi_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="LoaiCauHoi_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="LoaiCauHoi_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenLoaiCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="MonHoc_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdMonHoc" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="MonHoc_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdMonHoc" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenMonHoc" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+          <Parameter Name="p_TrangThai" Type="tinyint" Mode="In" />
+        </Function>
+        <Function Name="MonHoc_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="MonHoc_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdMonHoc" Type="varchar" Mode="In" />
+          <Parameter Name="p_TenMonHoc" Type="varchar" Mode="In" />
+          <Parameter Name="p_MoTa" Type="varchar" Mode="In" />
+          <Parameter Name="p_TrangThai" Type="tinyint" Mode="In" />
+        </Function>
+        <Function Name="ThaoLuan_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdThaoLuan" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ThaoLuan_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdThaoLuan" Type="varchar" Mode="In" />
+          <Parameter Name="p_ThoiDiem" Type="datetime" Mode="In" />
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ThaoLuan_Select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test" />
+        <Function Name="ThaoLuan_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="qm_test">
+          <Parameter Name="p_IdThaoLuan" Type="varchar" Mode="In" />
+          <Parameter Name="p_ThoiDiem" Type="datetime" Mode="In" />
+          <Parameter Name="p_IdCauHoi" Type="varchar" Mode="In" />
+          <Parameter Name="p_IdGiaoVien" Type="varchar" Mode="In" />
+          <Parameter Name="p_NoiDung" Type="varchar" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="qm_testModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="qm_testEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sinhvientralois" EntityType="qm_testModel.sinhvientraloi" />
+          <EntitySet Name="tbl_cauhoi" EntityType="qm_testModel.tbl_cauhoi" />
+          <EntitySet Name="tbl_cauhoichinhthuc" EntityType="qm_testModel.tbl_cauhoichinhthuc" />
+          <EntitySet Name="tbl_cautraloi" EntityType="qm_testModel.tbl_cautraloi" />
+          <EntitySet Name="tbl_cautraloichinhthuc" EntityType="qm_testModel.tbl_cautraloichinhthuc" />
+          <EntitySet Name="tbl_chitietchucdanh" EntityType="qm_testModel.tbl_chitietchucdanh" />
+          <EntitySet Name="tbl_chitietchucnang" EntityType="qm_testModel.tbl_chitietchucnang" />
+          <EntitySet Name="tbl_chitietchucvu" EntityType="qm_testModel.tbl_chitietchucvu" />
+          <EntitySet Name="tbl_chitietgiangday" EntityType="qm_testModel.tbl_chitietgiangday" />
+          <EntitySet Name="tbl_chitietquyen" EntityType="qm_testModel.tbl_chitietquyen" />
+          <EntitySet Name="tbl_chucdanh" EntityType="qm_testModel.tbl_chucdanh" />
+          <EntitySet Name="tbl_chucnang" EntityType="qm_testModel.tbl_chucnang" />
+          <EntitySet Name="tbl_chucvu" EntityType="qm_testModel.tbl_chucvu" />
+          <EntitySet Name="tbl_chude" EntityType="qm_testModel.tbl_chude" />
+          <EntitySet Name="tbl_chuong" EntityType="qm_testModel.tbl_chuong" />
+          <EntitySet Name="tbl_giaovien" EntityType="qm_testModel.tbl_giaovien" />
+          <EntitySet Name="tbl_giathiet" EntityType="qm_testModel.tbl_giathiet" />
+          <EntitySet Name="tbl_khoa" EntityType="qm_testModel.tbl_khoa" />
+          <EntitySet Name="tbl_loaicauhoi" EntityType="qm_testModel.tbl_loaicauhoi" />
+          <EntitySet Name="tbl_matrankienthuc" EntityType="qm_testModel.tbl_matrankienthuc" />
+          <EntitySet Name="tbl_monhoc" EntityType="qm_testModel.tbl_monhoc" />
+          <EntitySet Name="tbl_muckienthuc" EntityType="qm_testModel.tbl_muckienthuc" />
+          <EntitySet Name="tbl_muctrinang" EntityType="qm_testModel.tbl_muctrinang" />
+          <EntitySet Name="tbl_quyen" EntityType="qm_testModel.tbl_quyen" />
+          <EntitySet Name="tbl_taikhoansinhvien" EntityType="qm_testModel.tbl_taikhoansinhvien" />
+          <EntitySet Name="tbl_thaoluan" EntityType="qm_testModel.tbl_thaoluan" />
+          <EntitySet Name="tbl_tobomon" EntityType="qm_testModel.tbl_tobomon" />
+          <AssociationSet Name="sinhvientraloi_idfk1" Association="qm_testModel.sinhvientraloi_idfk1">
+            <End Role="tbl_taikhoansinhvien" EntitySet="tbl_taikhoansinhvien" />
+            <End Role="sinhvientraloi" EntitySet="sinhvientralois" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_1" Association="qm_testModel.tbl_cauhoi_ibfk_1">
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_2" Association="qm_testModel.tbl_cauhoi_ibfk_2">
+            <End Role="tbl_giathiet" EntitySet="tbl_giathiet" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cauhoi_ibfk_3" Association="qm_testModel.tbl_cauhoi_ibfk_3">
+            <End Role="tbl_loaicauhoi" EntitySet="tbl_loaicauhoi" />
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_cautraloi_ibfk_1" Association="qm_testModel.tbl_cautraloi_ibfk_1">
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+            <End Role="tbl_cautraloi" EntitySet="tbl_cautraloi" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_thaoluan_ibfk_1" Association="qm_testModel.tbl_thaoluan_ibfk_1">
+            <End Role="tbl_cauhoi" EntitySet="tbl_cauhoi" />
+            <End Role="tbl_thaoluan" EntitySet="tbl_thaoluan" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucdanh_ibfk_2" Association="qm_testModel.tbl_chitietchucdanh_ibfk_2">
+            <End Role="tbl_chucdanh" EntitySet="tbl_chucdanh" />
+            <End Role="tbl_chitietchucdanh" EntitySet="tbl_chitietchucdanh" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucnang_ibfk_2" Association="qm_testModel.tbl_chitietchucnang_ibfk_2">
+            <End Role="tbl_chucnang" EntitySet="tbl_chucnang" />
+            <End Role="tbl_chitietchucnang" EntitySet="tbl_chitietchucnang" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietchucvu_ibfk_2" Association="qm_testModel.tbl_chitietchucvu_ibfk_2">
+            <End Role="tbl_chucvu" EntitySet="tbl_chucvu" />
+            <End Role="tbl_chitietchucvu" EntitySet="tbl_chitietchucvu" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietgiangday_ibfk_1" Association="qm_testModel.tbl_chitietgiangday_ibfk_1">
+            <End Role="tbl_monhoc" EntitySet="tbl_monhoc" />
+            <End Role="tbl_chitietgiangday" EntitySet="tbl_chitietgiangday" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietquyen_ibfk_1" Association="qm_testModel.tbl_chitietquyen_ibfk_1">
+            <End Role="tbl_quyen" EntitySet="tbl_quyen" />
+            <End Role="tbl_chitietquyen" EntitySet="tbl_chitietquyen" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chitietquyen_ibfk_2" Association="qm_testModel.tbl_chitietquyen_ibfk_2">
+            <End Role="tbl_chucnang" EntitySet="tbl_chucnang" />
+            <End Role="tbl_chitietquyen" EntitySet="tbl_chitietquyen" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chude_ibfk_1" Association="qm_testModel.tbl_chude_ibfk_1">
+            <End Role="tbl_chuong" EntitySet="tbl_chuong" />
+            <End Role="tbl_chude" EntitySet="tbl_chude" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_muckienthuc_ibfk_1" Association="qm_testModel.tbl_muckienthuc_ibfk_1">
+            <End Role="tbl_chude" EntitySet="tbl_chude" />
+            <End Role="tbl_muckienthuc" EntitySet="tbl_muckienthuc" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_chuong_ibfk_1" Association="qm_testModel.tbl_chuong_ibfk_1">
+            <End Role="tbl_monhoc" EntitySet="tbl_monhoc" />
+            <End Role="tbl_chuong" EntitySet="tbl_chuong" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_giaovien_ibfk_1" Association="qm_testModel.tbl_giaovien_ibfk_1">
+            <End Role="tbl_tobomon" EntitySet="tbl_tobomon" />
+            <End Role="tbl_giaovien" EntitySet="tbl_giaovien" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_tobomon_ibfk_1" Association="qm_testModel.tbl_tobomon_ibfk_1">
+            <End Role="tbl_khoa" EntitySet="tbl_khoa" />
+            <End Role="tbl_tobomon" EntitySet="tbl_tobomon" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_matrankienthuc_ibfk_1" Association="qm_testModel.tbl_matrankienthuc_ibfk_1">
+            <End Role="tbl_muckienthuc" EntitySet="tbl_muckienthuc" />
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+          </AssociationSet>
+          <AssociationSet Name="tbl_matrankienthuc_ibfk_2" Association="qm_testModel.tbl_matrankienthuc_ibfk_2">
+            <End Role="tbl_muctrinang" EntitySet="tbl_muctrinang" />
+            <End Role="tbl_matrankienthuc" EntitySet="tbl_matrankienthuc" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sinhvientraloi">
+          <Key>
+            <PropertyRef Name="IdTraLoi" />
+          </Key>
+          <Property Name="IdTraLoi" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdCauHoi" Type="String" Nullable="false" />
+          <Property Name="IdSinhVien" Type="String" Nullable="false" />
+          <Property Name="ThoiGian" Type="String" Nullable="false" />
+          <Property Name="LuaChon" Type="String" Nullable="false" />
+          <Property Name="DapAn" Type="String" />
+          <NavigationProperty Name="tbl_taikhoansinhvien" Relationship="qm_testModel.sinhvientraloi_idfk1" FromRole="sinhvientraloi" ToRole="tbl_taikhoansinhvien" />
+        </EntityType>
+        <EntityType Name="tbl_cauhoi">
+          <Key>
+            <PropertyRef Name="IdCauHoi" />
+          </Key>
+          <Property Name="IdCauHoi" Type="String" Nullable="false" />
+          <Property Name="NoiDung" Type="String" />
+          <Property Name="IdGiaThiet" Type="String" />
+          <Property Name="IdLoaiCauHoi" Type="String" />
+          <Property Name="IdMaTranKienThuc" Type="String" />
+          <NavigationProperty Name="tbl_matrankienthuc" Relationship="qm_testModel.tbl_cauhoi_ibfk_1" FromRole="tbl_cauhoi" ToRole="tbl_matrankienthuc" />
+          <NavigationProperty Name="tbl_giathiet" Relationship="qm_testModel.tbl_cauhoi_ibfk_2" FromRole="tbl_cauhoi" ToRole="tbl_giathiet" />
+          <NavigationProperty Name="tbl_loaicauhoi" Relationship="qm_testModel.tbl_cauhoi_ibfk_3" FromRole="tbl_cauhoi" ToRole="tbl_loaicauhoi" />
+          <NavigationProperty Name="tbl_cautraloi" Relationship="qm_testModel.tbl_cautraloi_ibfk_1" FromRole="tbl_cauhoi" ToRole="tbl_cautraloi" />
+          <NavigationProperty Name="tbl_thaoluan" Relationship="qm_testModel.tbl_thaoluan_ibfk_1" FromRole="tbl_cauhoi" ToRole="tbl_thaoluan" />
+        </EntityType>
+        <EntityType Name="tbl_cauhoichinhthuc">
+          <Key>
+            <PropertyRef Name="IdCauHoi" />
+          </Key>
+          <Property Name="IdCauHoi" Type="String" Nullable="false" />
+          <Property Name="NoiDung" Type="String" />
+          <Property Name="IdLoaiCauHoi" Type="String" />
+          <Property Name="IdGiaThiet" Type="String" />
+          <Property Name="IdMaTranKienThuc" Type="String" />
+          <Property Type="Binary" Name="HinhAnh" />
+        </EntityType>
+        <EntityType Name="tbl_cautraloi">
+          <Key>
+            <PropertyRef Name="IdCauTraLoi" />
+          </Key>
+          <Property Name="IdCauTraLoi" Type="String" Nullable="false" />
+          <Property Name="IdCauHoi" Type="String" />
+          <Property Name="NoiDung" Type="String" />
+          <Property Name="DapAn" Type="String" />
+          <NavigationProperty Name="tbl_cauhoi" Relationship="qm_testModel.tbl_cautraloi_ibfk_1" FromRole="tbl_cautraloi" ToRole="tbl_cauhoi" />
+        </EntityType>
+        <EntityType Name="tbl_cautraloichinhthuc">
+          <Key>
+            <PropertyRef Name="IdCauTraLoi" />
+          </Key>
+          <Property Name="IdCauTraLoi" Type="String" Nullable="false" />
+          <Property Name="IdCauHoi" Type="String" />
+          <Property Name="NoiDung" Type="String" />
+          <Property Name="DapAn" Type="String" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucdanh">
+          <Key>
+            <PropertyRef Name="IdChucDanh" />
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="ThoiDiem" />
+          </Key>
+          <Property Name="IdChucDanh" Type="String" Nullable="false" />
+          <Property Name="IdGiaoVien" Type="String" Nullable="false" />
+          <Property Name="ThoiDiem" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tbl_chucdanh" Relationship="qm_testModel.tbl_chitietchucdanh_ibfk_2" FromRole="tbl_chitietchucdanh" ToRole="tbl_chucdanh" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucnang">
+          <Key>
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="IdChucNang" />
+          </Key>
+          <Property Name="IdGiaoVien" Type="String" Nullable="false" />
+          <Property Name="IdChucNang" Type="String" Nullable="false" />
+          <NavigationProperty Name="tbl_chucnang" Relationship="qm_testModel.tbl_chitietchucnang_ibfk_2" FromRole="tbl_chitietchucnang" ToRole="tbl_chucnang" />
+        </EntityType>
+        <EntityType Name="tbl_chitietchucvu">
+          <Key>
+            <PropertyRef Name="IdChucVu" />
+            <PropertyRef Name="IdGiaoVien" />
+          </Key>
+          <Property Name="IdChucVu" Type="String" Nullable="false" />
+          <Property Name="IdGiaoVien" Type="String" Nullable="false" />
+          <Property Name="ThoiDiem" Type="DateTime" />
+          <NavigationProperty Name="tbl_chucvu" Relationship="qm_testModel.tbl_chitietchucvu_ibfk_2" FromRole="tbl_chitietchucvu" ToRole="tbl_chucvu" />
+        </EntityType>
+        <EntityType Name="tbl_chitietgiangday">
+          <Key>
+            <PropertyRef Name="IdMonHoc" />
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="NgayBatDau" />
+          </Key>
+          <Property Name="IdMonHoc" Type="String" Nullable="false" />
+          <Property Name="IdGiaoVien" Type="String" Nullable="false" />
+          <Property Name="NgayBatDau" Type="DateTime" Nullable="false" />
+          <Property Name="NgayKetThuc" Type="DateTime" />
+          <NavigationProperty Name="tbl_monhoc" Relationship="qm_testModel.tbl_chitietgiangday_ibfk_1" FromRole="tbl_chitietgiangday" ToRole="tbl_monhoc" />
+        </EntityType>
+        <EntityType Name="tbl_chitietquyen">
+          <Key>
+            <PropertyRef Name="IdChucNang" />
+            <PropertyRef Name="IdQuyen" />
+          </Key>
+          <Property Name="IdChucNang" Type="String" Nullable="false" />
+          <Property Name="IdQuyen" Type="String" Nullable="false" />
+          <Property Name="TrangThai" Type="Boolean" />
+          <NavigationProperty Name="tbl_quyen" Relationship="qm_testModel.tbl_chitietquyen_ibfk_1" FromRole="tbl_chitietquyen" ToRole="tbl_quyen" />
+          <NavigationProperty Name="tbl_chucnang" Relationship="qm_testModel.tbl_chitietquyen_ibfk_2" FromRole="tbl_chitietquyen" ToRole="tbl_chucnang" />
+        </EntityType>
+        <EntityType Name="tbl_chucdanh">
+          <Key>
+            <PropertyRef Name="IdChucDanh" />
+          </Key>
+          <Property Name="IdChucDanh" Type="String" Nullable="false" />
+          <Property Name="TenChucDanh" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_chitietchucdanh" Relationship="qm_testModel.tbl_chitietchucdanh_ibfk_2" FromRole="tbl_chucdanh" ToRole="tbl_chitietchucdanh" />
+        </EntityType>
+        <EntityType Name="tbl_chucnang">
+          <Key>
+            <PropertyRef Name="IdChucNang" />
+          </Key>
+          <Property Name="IdChucNang" Type="String" Nullable="false" />
+          <Property Name="TenChucNang" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_chitietchucnang" Relationship="qm_testModel.tbl_chitietchucnang_ibfk_2" FromRole="tbl_chucnang" ToRole="tbl_chitietchucnang" />
+          <NavigationProperty Name="tbl_chitietquyen" Relationship="qm_testModel.tbl_chitietquyen_ibfk_2" FromRole="tbl_chucnang" ToRole="tbl_chitietquyen" />
+        </EntityType>
+        <EntityType Name="tbl_chucvu">
+          <Key>
+            <PropertyRef Name="IdChucVu" />
+          </Key>
+          <Property Name="IdChucVu" Type="String" Nullable="false" />
+          <Property Name="TenChucVu" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_chitietchucvu" Relationship="qm_testModel.tbl_chitietchucvu_ibfk_2" FromRole="tbl_chucvu" ToRole="tbl_chitietchucvu" />
+        </EntityType>
+        <EntityType Name="tbl_chude">
+          <Key>
+            <PropertyRef Name="IdChuDe" />
+          </Key>
+          <Property Name="IdChuDe" Type="String" Nullable="false" />
+          <Property Name="TenChuDe" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <Property Name="IdChuong" Type="String" />
+          <NavigationProperty Name="tbl_chuong" Relationship="qm_testModel.tbl_chude_ibfk_1" FromRole="tbl_chude" ToRole="tbl_chuong" />
+          <NavigationProperty Name="tbl_muckienthuc" Relationship="qm_testModel.tbl_muckienthuc_ibfk_1" FromRole="tbl_chude" ToRole="tbl_muckienthuc" />
+        </EntityType>
+        <EntityType Name="tbl_chuong">
+          <Key>
+            <PropertyRef Name="IdChuong" />
+          </Key>
+          <Property Name="IdChuong" Type="String" Nullable="false" />
+          <Property Name="IdMonHoc" Type="String" />
+          <Property Name="TenChuong" Type="String" />
+          <NavigationProperty Name="tbl_chude" Relationship="qm_testModel.tbl_chude_ibfk_1" FromRole="tbl_chuong" ToRole="tbl_chude" />
+          <NavigationProperty Name="tbl_monhoc" Relationship="qm_testModel.tbl_chuong_ibfk_1" FromRole="tbl_chuong" ToRole="tbl_monhoc" />
+        </EntityType>
+        <EntityType Name="tbl_giaovien">
+          <Key>
+            <PropertyRef Name="IdGiaoVien" />
+            <PropertyRef Name="TaiKhoan" />
+          </Key>
+          <Property Name="IdGiaoVien" Type="String" Nullable="false" />
+          <Property Name="TenGiaoVien" Type="String" />
+          <Property Name="TaiKhoan" Type="String" Nullable="false" />
+          <Property Name="MatKhau" Type="String" />
+          <Property Name="IdToBoMon" Type="String" />
+          <Property Name="NgaySinh" Type="DateTime" />
+          <Property Name="DiaChi" Type="String" />
+          <Property Name="SoDienThoai" Type="String" />
+          <Property Name="TrangThai" Type="Boolean" />
+          <NavigationProperty Name="tbl_tobomon" Relationship="qm_testModel.tbl_giaovien_ibfk_1" FromRole="tbl_giaovien" ToRole="tbl_tobomon" />
+        </EntityType>
+        <EntityType Name="tbl_giathiet">
+          <Key>
+            <PropertyRef Name="IdGiaThiet" />
+          </Key>
+          <Property Name="IdGiaThiet" Type="String" Nullable="false" />
+          <Property Name="NoiDung" Type="String" />
+          <NavigationProperty Name="tbl_cauhoi" Relationship="qm_testModel.tbl_cauhoi_ibfk_2" FromRole="tbl_giathiet" ToRole="tbl_cauhoi" />
+        </EntityType>
+        <EntityType Name="tbl_khoa">
+          <Key>
+            <PropertyRef Name="IdKhoa" />
+          </Key>
+          <Property Name="IdKhoa" Type="String" Nullable="false" />
+          <Property Name="TenKhoa" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_tobomon" Relationship="qm_testModel.tbl_tobomon_ibfk_1" FromRole="tbl_khoa" ToRole="tbl_tobomon" />
+        </EntityType>
+        <EntityType Name="tbl_loaicauhoi">
+          <Key>
+            <PropertyRef Name="IdLoaiCauHoi" />
+          </Key>
+          <Property Name="IdLoaiCauHoi" Type="String" Nullable="false" />
+          <Property Name="TenLoaiCauHoi" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_cauhoi" Relationship="qm_testModel.tbl_cauhoi_ibfk_3" FromRole="tbl_loaicauhoi" ToRole="tbl_cauhoi" />
+        </EntityType>
+        <EntityType Name="tbl_matrankienthuc">
+          <Key>
+            <PropertyRef Name="IdMaTranKienThuc" />
+          </Key>
+          <Property Name="IdMaTranKienThuc" Type="String" Nullable="false" />
+          <Property Name="IdMucKienThuc" Type="String" />
+          <Property Name="IdMucTriNang" Type="String" />
+          <Property Name="SoCauNhap" Type="Int32" />
+          <Property Name="SoCauQuyDinh" Type="Int32" />
+          <NavigationProperty Name="tbl_cauhoi" Relationship="qm_testModel.tbl_cauhoi_ibfk_1" FromRole="tbl_matrankienthuc" ToRole="tbl_cauhoi" />
+          <NavigationProperty Name="tbl_muckienthuc" Relationship="qm_testModel.tbl_matrankienthuc_ibfk_1" FromRole="tbl_matrankienthuc" ToRole="tbl_muckienthuc" />
+          <NavigationProperty Name="tbl_muctrinang" Relationship="qm_testModel.tbl_matrankienthuc_ibfk_2" FromRole="tbl_matrankienthuc" ToRole="tbl_muctrinang" />
+        </EntityType>
+        <EntityType Name="tbl_monhoc">
+          <Key>
+            <PropertyRef Name="IdMonHoc" />
+          </Key>
+          <Property Name="IdMonHoc" Type="String" Nullable="false" />
+          <Property Name="TenMonHoc" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <Property Name="TrangThai" Type="Boolean" />
+          <NavigationProperty Name="tbl_chitietgiangday" Relationship="qm_testModel.tbl_chitietgiangday_ibfk_1" FromRole="tbl_monhoc" ToRole="tbl_chitietgiangday" />
+          <NavigationProperty Name="tbl_chuong" Relationship="qm_testModel.tbl_chuong_ibfk_1" FromRole="tbl_monhoc" ToRole="tbl_chuong" />
+        </EntityType>
+        <EntityType Name="tbl_muckienthuc">
+          <Key>
+            <PropertyRef Name="IdMucKienThuc" />
+          </Key>
+          <Property Name="IdMucKienThuc" Type="String" Nullable="false" />
+          <Property Name="TenMucKienThuc" Type="String" />
+          <Property Name="IdChuDe" Type="String" />
+          <NavigationProperty Name="tbl_chude" Relationship="qm_testModel.tbl_muckienthuc_ibfk_1" FromRole="tbl_muckienthuc" ToRole="tbl_chude" />
+          <NavigationProperty Name="tbl_matrankienthuc" Relationship="qm_testModel.tbl_matrankienthuc_ibfk_1" FromRole="tbl_muckienthuc" ToRole="tbl_matrankienthuc" />
+        </EntityType>
+        <EntityType Name="tbl_muctrinang">
+          <Key>
+            <PropertyRef Name="IdMucTriNang" />
+          </Key>
+          <Property Name="IdMucTriNang" Type="String" Nullable="false" />
+          <Property Name="TenMucTriNang" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_matrankienthuc" Relationship="qm_testModel.tbl_matrankienthuc_ibfk_2" FromRole="tbl_muctrinang" ToRole="tbl_matrankienthuc" />
+        </EntityType>
+        <EntityType Name="tbl_quyen">
+          <Key>
+            <PropertyRef Name="IdQuyen" />
+          </Key>
+          <Property Name="IdQuyen" Type="String" Nullable="false" />
+          <Property Name="TenQuyen" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <NavigationProperty Name="tbl_chitietquyen" Relationship="qm_testModel.tbl_chitietquyen_ibfk_1" FromRole="tbl_quyen" ToRole="tbl_chitietquyen" />
+        </EntityType>
+        <EntityType Name="tbl_taikhoansinhvien">
+          <Key>
+            <PropertyRef Name="IdSinhVien" />
+          </Key>
+          <Property Name="IdSinhVien" Type="String" Nullable="false" />
+          <Property Name="HoTen" Type="String" />
+          <Property Name="MatKhau" Type="String" />
+          <Property Name="MaQuyen" Type="Int32" />
+          <NavigationProperty Name="sinhvientralois" Relationship="qm_testModel.sinhvientraloi_idfk1" FromRole="tbl_taikhoansinhvien" ToRole="sinhvientraloi" />
+        </EntityType>
+        <EntityType Name="tbl_thaoluan">
+          <Key>
+            <PropertyRef Name="IdThaoLuan" />
+            <PropertyRef Name="ThoiDiem" />
+          </Key>
+          <Property Name="IdThaoLuan" Type="String" Nullable="false" />
+          <Property Name="ThoiDiem" Type="DateTime" Nullable="false" />
+          <Property Name="IdCauHoi" Type="String" />
+          <Property Name="IdGiaoVien" Type="String" />
+          <Property Name="NoiDung" Type="String" />
+          <NavigationProperty Name="tbl_cauhoi" Relationship="qm_testModel.tbl_thaoluan_ibfk_1" FromRole="tbl_thaoluan" ToRole="tbl_cauhoi" />
+        </EntityType>
+        <EntityType Name="tbl_tobomon">
+          <Key>
+            <PropertyRef Name="IdToBoMon" />
+          </Key>
+          <Property Name="IdToBoMon" Type="String" Nullable="false" />
+          <Property Name="TenToBoMon" Type="String" />
+          <Property Name="MoTa" Type="String" />
+          <Property Name="IdKhoa" Type="String" />
+          <NavigationProperty Name="tbl_giaovien" Relationship="qm_testModel.tbl_giaovien_ibfk_1" FromRole="tbl_tobomon" ToRole="tbl_giaovien" />
+          <NavigationProperty Name="tbl_khoa" Relationship="qm_testModel.tbl_tobomon_ibfk_1" FromRole="tbl_tobomon" ToRole="tbl_khoa" />
+        </EntityType>
+        <Association Name="sinhvientraloi_idfk1">
+          <End Role="tbl_taikhoansinhvien" Type="qm_testModel.tbl_taikhoansinhvien" Multiplicity="1" />
+          <End Role="sinhvientraloi" Type="qm_testModel.sinhvientraloi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_taikhoansinhvien">
+              <PropertyRef Name="IdSinhVien" />
+            </Principal>
+            <Dependent Role="sinhvientraloi">
+              <PropertyRef Name="IdSinhVien" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_1">
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.tbl_matrankienthuc" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMaTranKienThuc" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdMaTranKienThuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_2">
+          <End Role="tbl_giathiet" Type="qm_testModel.tbl_giathiet" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_giathiet">
+              <PropertyRef Name="IdGiaThiet" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdGiaThiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cauhoi_ibfk_3">
+          <End Role="tbl_loaicauhoi" Type="qm_testModel.tbl_loaicauhoi" Multiplicity="0..1" />
+          <End Role="tbl_cauhoi" Type="qm_testModel.tbl_cauhoi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_loaicauhoi">
+              <PropertyRef Name="IdLoaiCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_cauhoi">
+              <PropertyRef Name="IdLoaiCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_cautraloi_ibfk_1">
+          <End Role="tbl_cauhoi" Type="qm_testModel.tbl_cauhoi" Multiplicity="0..1" />
+          <End Role="tbl_cautraloi" Type="qm_testModel.tbl_cautraloi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_cauhoi">
+              <PropertyRef Name="IdCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_cautraloi">
+              <PropertyRef Name="IdCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_thaoluan_ibfk_1">
+          <End Role="tbl_cauhoi" Type="qm_testModel.tbl_cauhoi" Multiplicity="0..1" />
+          <End Role="tbl_thaoluan" Type="qm_testModel.tbl_thaoluan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_cauhoi">
+              <PropertyRef Name="IdCauHoi" />
+            </Principal>
+            <Dependent Role="tbl_thaoluan">
+              <PropertyRef Name="IdCauHoi" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucdanh_ibfk_2">
+          <End Role="tbl_chucdanh" Type="qm_testModel.tbl_chucdanh" Multiplicity="1" />
+          <End Role="tbl_chitietchucdanh" Type="qm_testModel.tbl_chitietchucdanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucdanh">
+              <PropertyRef Name="IdChucDanh" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucdanh">
+              <PropertyRef Name="IdChucDanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucnang_ibfk_2">
+          <End Role="tbl_chucnang" Type="qm_testModel.tbl_chucnang" Multiplicity="1" />
+          <End Role="tbl_chitietchucnang" Type="qm_testModel.tbl_chitietchucnang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietchucvu_ibfk_2">
+          <End Role="tbl_chucvu" Type="qm_testModel.tbl_chucvu" Multiplicity="1" />
+          <End Role="tbl_chitietchucvu" Type="qm_testModel.tbl_chitietchucvu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucvu">
+              <PropertyRef Name="IdChucVu" />
+            </Principal>
+            <Dependent Role="tbl_chitietchucvu">
+              <PropertyRef Name="IdChucVu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietgiangday_ibfk_1">
+          <End Role="tbl_monhoc" Type="qm_testModel.tbl_monhoc" Multiplicity="1" />
+          <End Role="tbl_chitietgiangday" Type="qm_testModel.tbl_chitietgiangday" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_monhoc">
+              <PropertyRef Name="IdMonHoc" />
+            </Principal>
+            <Dependent Role="tbl_chitietgiangday">
+              <PropertyRef Name="IdMonHoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietquyen_ibfk_1">
+          <End Role="tbl_quyen" Type="qm_testModel.tbl_quyen" Multiplicity="1" />
+          <End Role="tbl_chitietquyen" Type="qm_testModel.tbl_chitietquyen" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_quyen">
+              <PropertyRef Name="IdQuyen" />
+            </Principal>
+            <Dependent Role="tbl_chitietquyen">
+              <PropertyRef Name="IdQuyen" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chitietquyen_ibfk_2">
+          <End Role="tbl_chucnang" Type="qm_testModel.tbl_chucnang" Multiplicity="1" />
+          <End Role="tbl_chitietquyen" Type="qm_testModel.tbl_chitietquyen" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chucnang">
+              <PropertyRef Name="IdChucNang" />
+            </Principal>
+            <Dependent Role="tbl_chitietquyen">
+              <PropertyRef Name="IdChucNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chude_ibfk_1">
+          <End Role="tbl_chuong" Type="qm_testModel.tbl_chuong" Multiplicity="0..1" />
+          <End Role="tbl_chude" Type="qm_testModel.tbl_chude" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chuong">
+              <PropertyRef Name="IdChuong" />
+            </Principal>
+            <Dependent Role="tbl_chude">
+              <PropertyRef Name="IdChuong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_muckienthuc_ibfk_1">
+          <End Role="tbl_chude" Type="qm_testModel.tbl_chude" Multiplicity="0..1" />
+          <End Role="tbl_muckienthuc" Type="qm_testModel.tbl_muckienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_chude">
+              <PropertyRef Name="IdChuDe" />
+            </Principal>
+            <Dependent Role="tbl_muckienthuc">
+              <PropertyRef Name="IdChuDe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_chuong_ibfk_1">
+          <End Role="tbl_monhoc" Type="qm_testModel.tbl_monhoc" Multiplicity="0..1" />
+          <End Role="tbl_chuong" Type="qm_testModel.tbl_chuong" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_monhoc">
+              <PropertyRef Name="IdMonHoc" />
+            </Principal>
+            <Dependent Role="tbl_chuong">
+              <PropertyRef Name="IdMonHoc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_giaovien_ibfk_1">
+          <End Role="tbl_tobomon" Type="qm_testModel.tbl_tobomon" Multiplicity="0..1" />
+          <End Role="tbl_giaovien" Type="qm_testModel.tbl_giaovien" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_tobomon">
+              <PropertyRef Name="IdToBoMon" />
+            </Principal>
+            <Dependent Role="tbl_giaovien">
+              <PropertyRef Name="IdToBoMon" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_tobomon_ibfk_1">
+          <End Role="tbl_khoa" Type="qm_testModel.tbl_khoa" Multiplicity="0..1" />
+          <End Role="tbl_tobomon" Type="qm_testModel.tbl_tobomon" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_khoa">
+              <PropertyRef Name="IdKhoa" />
+            </Principal>
+            <Dependent Role="tbl_tobomon">
+              <PropertyRef Name="IdKhoa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_matrankienthuc_ibfk_1">
+          <End Role="tbl_muckienthuc" Type="qm_testModel.tbl_muckienthuc" Multiplicity="0..1" />
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.tbl_matrankienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_muckienthuc">
+              <PropertyRef Name="IdMucKienThuc" />
+            </Principal>
+            <Dependent Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMucKienThuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tbl_matrankienthuc_ibfk_2">
+          <End Role="tbl_muctrinang" Type="qm_testModel.tbl_muctrinang" Multiplicity="0..1" />
+          <End Role="tbl_matrankienthuc" Type="qm_testModel.tbl_matrankienthuc" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_muctrinang">
+              <PropertyRef Name="IdMucTriNang" />
+            </Principal>
+            <Dependent Role="tbl_matrankienthuc">
+              <PropertyRef Name="IdMucTriNang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="qm_testModelStoreContainer" CdmEntityContainer="qm_testEntities1">
+          <EntitySetMapping Name="sinhvientralois">
+            <EntityTypeMapping TypeName="qm_testModel.sinhvientraloi">
+              <MappingFragment StoreEntitySet="sinhvientraloi">
+                <ScalarProperty Name="IdTraLoi" ColumnName="IdTraLoi" />
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="IdSinhVien" ColumnName="IdSinhVien" />
+                <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+                <ScalarProperty Name="LuaChon" ColumnName="LuaChon" />
+                <ScalarProperty Name="DapAn" ColumnName="DapAn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_cauhoi">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_cauhoi">
+              <MappingFragment StoreEntitySet="tbl_cauhoi">
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="IdGiaThiet" ColumnName="IdGiaThiet" />
+                <ScalarProperty Name="IdLoaiCauHoi" ColumnName="IdLoaiCauHoi" />
+                <ScalarProperty Name="IdMaTranKienThuc" ColumnName="IdMaTranKienThuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_cauhoichinhthuc">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_cauhoichinhthuc">
+              <MappingFragment StoreEntitySet="tbl_cauhoichinhthuc">
+                <ScalarProperty Name="HinhAnh" ColumnName="HinhAnh" />
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="IdLoaiCauHoi" ColumnName="IdLoaiCauHoi" />
+                <ScalarProperty Name="IdGiaThiet" ColumnName="IdGiaThiet" />
+                <ScalarProperty Name="IdMaTranKienThuc" ColumnName="IdMaTranKienThuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_cautraloi">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_cautraloi">
+              <MappingFragment StoreEntitySet="tbl_cautraloi">
+                <ScalarProperty Name="IdCauTraLoi" ColumnName="IdCauTraLoi" />
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="DapAn" ColumnName="DapAn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_cautraloichinhthuc">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_cautraloichinhthuc">
+              <MappingFragment StoreEntitySet="tbl_cautraloichinhthuc">
+                <ScalarProperty Name="IdCauTraLoi" ColumnName="IdCauTraLoi" />
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="DapAn" ColumnName="DapAn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chitietchucdanh">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chitietchucdanh">
+              <MappingFragment StoreEntitySet="tbl_chitietchucdanh">
+                <ScalarProperty Name="IdChucDanh" ColumnName="IdChucDanh" />
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="ThoiDiem" ColumnName="ThoiDiem" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chitietchucnang">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chitietchucnang">
+              <MappingFragment StoreEntitySet="tbl_chitietchucnang">
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="IdChucNang" ColumnName="IdChucNang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chitietchucvu">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chitietchucvu">
+              <MappingFragment StoreEntitySet="tbl_chitietchucvu">
+                <ScalarProperty Name="IdChucVu" ColumnName="IdChucVu" />
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="ThoiDiem" ColumnName="ThoiDiem" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chitietgiangday">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chitietgiangday">
+              <MappingFragment StoreEntitySet="tbl_chitietgiangday">
+                <ScalarProperty Name="IdMonHoc" ColumnName="IdMonHoc" />
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="NgayBatDau" ColumnName="NgayBatDau" />
+                <ScalarProperty Name="NgayKetThuc" ColumnName="NgayKetThuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chitietquyen">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chitietquyen">
+              <MappingFragment StoreEntitySet="tbl_chitietquyen">
+                <ScalarProperty Name="IdChucNang" ColumnName="IdChucNang" />
+                <ScalarProperty Name="IdQuyen" ColumnName="IdQuyen" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chucdanh">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chucdanh">
+              <MappingFragment StoreEntitySet="tbl_chucdanh">
+                <ScalarProperty Name="IdChucDanh" ColumnName="IdChucDanh" />
+                <ScalarProperty Name="TenChucDanh" ColumnName="TenChucDanh" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chucnang">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chucnang">
+              <MappingFragment StoreEntitySet="tbl_chucnang">
+                <ScalarProperty Name="IdChucNang" ColumnName="IdChucNang" />
+                <ScalarProperty Name="TenChucNang" ColumnName="TenChucNang" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chucvu">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chucvu">
+              <MappingFragment StoreEntitySet="tbl_chucvu">
+                <ScalarProperty Name="IdChucVu" ColumnName="IdChucVu" />
+                <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chude">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chude">
+              <MappingFragment StoreEntitySet="tbl_chude">
+                <ScalarProperty Name="IdChuDe" ColumnName="IdChuDe" />
+                <ScalarProperty Name="TenChuDe" ColumnName="TenChuDe" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="IdChuong" ColumnName="IdChuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_chuong">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_chuong">
+              <MappingFragment StoreEntitySet="tbl_chuong">
+                <ScalarProperty Name="IdChuong" ColumnName="IdChuong" />
+                <ScalarProperty Name="IdMonHoc" ColumnName="IdMonHoc" />
+                <ScalarProperty Name="TenChuong" ColumnName="TenChuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_giaovien">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_giaovien">
+              <MappingFragment StoreEntitySet="tbl_giaovien">
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="TenGiaoVien" ColumnName="TenGiaoVien" />
+                <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="IdToBoMon" ColumnName="IdToBoMon" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_giathiet">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_giathiet">
+              <MappingFragment StoreEntitySet="tbl_giathiet">
+                <ScalarProperty Name="IdGiaThiet" ColumnName="IdGiaThiet" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_khoa">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_khoa">
+              <MappingFragment StoreEntitySet="tbl_khoa">
+                <ScalarProperty Name="IdKhoa" ColumnName="IdKhoa" />
+                <ScalarProperty Name="TenKhoa" ColumnName="TenKhoa" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_loaicauhoi">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_loaicauhoi">
+              <MappingFragment StoreEntitySet="tbl_loaicauhoi">
+                <ScalarProperty Name="IdLoaiCauHoi" ColumnName="IdLoaiCauHoi" />
+                <ScalarProperty Name="TenLoaiCauHoi" ColumnName="TenLoaiCauHoi" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_matrankienthuc">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_matrankienthuc">
+              <MappingFragment StoreEntitySet="tbl_matrankienthuc">
+                <ScalarProperty Name="IdMaTranKienThuc" ColumnName="IdMaTranKienThuc" />
+                <ScalarProperty Name="IdMucKienThuc" ColumnName="IdMucKienThuc" />
+                <ScalarProperty Name="IdMucTriNang" ColumnName="IdMucTriNang" />
+                <ScalarProperty Name="SoCauNhap" ColumnName="SoCauNhap" />
+                <ScalarProperty Name="SoCauQuyDinh" ColumnName="SoCauQuyDinh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_monhoc">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_monhoc">
+              <MappingFragment StoreEntitySet="tbl_monhoc">
+                <ScalarProperty Name="IdMonHoc" ColumnName="IdMonHoc" />
+                <ScalarProperty Name="TenMonHoc" ColumnName="TenMonHoc" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_muckienthuc">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_muckienthuc">
+              <MappingFragment StoreEntitySet="tbl_muckienthuc">
+                <ScalarProperty Name="IdMucKienThuc" ColumnName="IdMucKienThuc" />
+                <ScalarProperty Name="TenMucKienThuc" ColumnName="TenMucKienThuc" />
+                <ScalarProperty Name="IdChuDe" ColumnName="IdChuDe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_muctrinang">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_muctrinang">
+              <MappingFragment StoreEntitySet="tbl_muctrinang">
+                <ScalarProperty Name="IdMucTriNang" ColumnName="IdMucTriNang" />
+                <ScalarProperty Name="TenMucTriNang" ColumnName="TenMucTriNang" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_quyen">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_quyen">
+              <MappingFragment StoreEntitySet="tbl_quyen">
+                <ScalarProperty Name="IdQuyen" ColumnName="IdQuyen" />
+                <ScalarProperty Name="TenQuyen" ColumnName="TenQuyen" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_taikhoansinhvien">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_taikhoansinhvien">
+              <MappingFragment StoreEntitySet="tbl_taikhoansinhvien">
+                <ScalarProperty Name="IdSinhVien" ColumnName="IdSinhVien" />
+                <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="MaQuyen" ColumnName="MaQuyen" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_thaoluan">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_thaoluan">
+              <MappingFragment StoreEntitySet="tbl_thaoluan">
+                <ScalarProperty Name="IdThaoLuan" ColumnName="IdThaoLuan" />
+                <ScalarProperty Name="ThoiDiem" ColumnName="ThoiDiem" />
+                <ScalarProperty Name="IdCauHoi" ColumnName="IdCauHoi" />
+                <ScalarProperty Name="IdGiaoVien" ColumnName="IdGiaoVien" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_tobomon">
+            <EntityTypeMapping TypeName="qm_testModel.tbl_tobomon">
+              <MappingFragment StoreEntitySet="tbl_tobomon">
+                <ScalarProperty Name="IdToBoMon" ColumnName="IdToBoMon" />
+                <ScalarProperty Name="TenToBoMon" ColumnName="TenToBoMon" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="IdKhoa" ColumnName="IdKhoa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model_qmtest">
+        <EntityTypeShape EntityType="qm_testModel.sinhvientraloi" Width="1.5" PointX="14" PointY="10" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_cauhoi" Width="1.5" PointX="12" PointY="4.875" Height="2.9417936197916656" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_cauhoichinhthuc" Width="1.5" PointX="12.75" PointY="13.75" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_cautraloi" Width="1.5" PointX="14.25" PointY="3.875" Height="1.9802864583333335" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_cautraloichinhthuc" Width="1.5" PointX="14.75" PointY="13.75" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chitietchucdanh" Width="1.5" PointX="3" PointY="12.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chitietchucnang" Width="1.5" PointX="10" PointY="13.375" Height="1.5956835937499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chitietchucvu" Width="1.5" PointX="14" PointY="0.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chitietgiangday" Width="1.5" PointX="3" PointY="2.625" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chitietquyen" Width="1.5" PointX="10" PointY="16.25" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chucdanh" Width="1.5" PointX="0.75" PointY="12.875" Height="1.787985026041671" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chucnang" Width="1.5" PointX="7.75" PointY="13.25" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chucvu" Width="1.5" PointX="11.75" PointY="0.875" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chude" Width="1.5" PointX="5.25" PointY="5.25" Height="2.172587890624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_chuong" Width="1.5" PointX="3" PointY="5.375" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_giaovien" Width="1.5" PointX="5.25" PointY="9" Height="2.9417936197916674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_giathiet" Width="1.5" PointX="9.75" PointY="2.375" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_khoa" Width="1.5" PointX="0.75" PointY="9.5" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_loaicauhoi" Width="1.5" PointX="9.75" PointY="8.625" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_matrankienthuc" Width="1.5" PointX="9.75" PointY="5.125" Height="2.5571907552083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_monhoc" Width="1.5" PointX="0.75" PointY="3.875" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_muckienthuc" Width="1.5" PointX="7.5" PointY="5.375" Height="1.9802864583333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_muctrinang" Width="1.5" PointX="7.5" PointY="2.5" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_quyen" Width="1.5" PointX="7.75" PointY="16.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_taikhoansinhvien" Width="1.5" PointX="11.75" PointY="10.125" Height="1.9802864583333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_thaoluan" Width="1.5" PointX="14.25" PointY="6.625" Height="2.172587890624996" IsExpanded="true" />
+        <EntityTypeShape EntityType="qm_testModel.tbl_tobomon" Width="1.5" PointX="3" PointY="9.375" Height="2.1725878906250102" IsExpanded="true" />
+        <AssociationConnector Association="qm_testModel.sinhvientraloi_idfk1" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.25" PointY="11.115143229166662" />
+          <ConnectorPoint PointX="14" PointY="11.115143229166662" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_cauhoi_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="6.4035953776041694" />
+          <ConnectorPoint PointX="12" PointY="6.4035953776041694" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_cauhoi_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="3.3480843098958353" />
+          <ConnectorPoint PointX="13.40625" PointY="3.3480843098958353" />
+          <ConnectorPoint PointX="13.40625" PointY="4.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_cauhoi_ibfk_3" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="9.34375" />
+          <ConnectorPoint PointX="13.40625" PointY="9.34375" />
+          <ConnectorPoint PointX="13.40625" PointY="7.8167936197916656" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_cautraloi_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="5.3651432291666667" />
+          <ConnectorPoint PointX="14.25" PointY="5.3651432291666667" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_thaoluan_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="7.2208968098958328" />
+          <ConnectorPoint PointX="14.25" PointY="7.2208968098958328" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietchucdanh_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="13.768992513020834" />
+          <ConnectorPoint PointX="3" PointY="13.768992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietchucnang_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.25" PointY="14.172841796875" />
+          <ConnectorPoint PointX="10" PointY="14.172841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietchucvu_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.25" PointY="1.7689925130208337" />
+          <ConnectorPoint PointX="14" PointY="1.7689925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietgiangday_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="4.2401432291666659" />
+          <ConnectorPoint PointX="3" PointY="4.2401432291666659" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietquyen_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.25" PointY="17.143992513020834" />
+          <ConnectorPoint PointX="9.5416666666666661" PointY="17.143992513020834" />
+          <ConnectorPoint PointX="9.7083333333333339" PointY="17.143992513020834" />
+          <ConnectorPoint PointX="10" PointY="17.143992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chitietquyen_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.25" PointY="15.230286458333332" />
+          <ConnectorPoint PointX="9.625" PointY="15.605286458333332" />
+          <ConnectorPoint PointX="9.625" PointY="17.718391485677081" />
+          <ConnectorPoint PointX="10" PointY="17.718391485677081" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chude_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.3651432291666694" />
+          <ConnectorPoint PointX="5.25" PointY="6.3651432291666694" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_muckienthuc_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="6.3651432291666694" />
+          <ConnectorPoint PointX="7.5" PointY="6.3651432291666694" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_chuong_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="5.7112939453125016" />
+          <ConnectorPoint PointX="3" PointY="5.7112939453125016" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_giaovien_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="10.461293945312505" />
+          <ConnectorPoint PointX="5.25" PointY="10.461293945312505" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_tobomon_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="10.393992513020834" />
+          <ConnectorPoint PointX="3" PointY="10.393992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_matrankienthuc_ibfk_1" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="6.3651432291666694" />
+          <ConnectorPoint PointX="9.2916666666666661" PointY="6.3651432291666685" />
+          <ConnectorPoint PointX="9.4583333333333339" PointY="6.3651432291666694" />
+          <ConnectorPoint PointX="9.75" PointY="6.3651432291666694" />
+        </AssociationConnector>
+        <AssociationConnector Association="qm_testModel.tbl_matrankienthuc_ibfk_2" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="4.2868301798878212" />
+          <ConnectorPoint PointX="9.375" PointY="4.6618301798878212" />
+          <ConnectorPoint PointX="9.375" PointY="7.0549189921874973" />
+          <ConnectorPoint PointX="9.75" PointY="7.0549189921874973" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
